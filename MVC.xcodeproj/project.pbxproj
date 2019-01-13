@@ -25,6 +25,7 @@
 		B225EE9221EB55A70009EC33 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225EE9121EB55A70009EC33 /* Model.swift */; };
 		B225EE9421EB56810009EC33 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225EE9321EB56810009EC33 /* Controller.swift */; };
 		B225EE9621EB56920009EC33 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225EE9521EB56920009EC33 /* View.swift */; };
+		B225EED821EBA67D0009EC33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225EED721EBA67D0009EC33 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		B225EE9121EB55A70009EC33 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B225EE9321EB56810009EC33 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		B225EE9521EB56920009EC33 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		B225EED721EBA67D0009EC33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				B221D2FA21EB4A7A003EB3AC /* Model.swift */,
 				B221D2FC21EB4BF1003EB3AC /* Controller.swift */,
 				B221D2FE21EB4D05003EB3AC /* View.swift */,
+				B225EED721EBA67D0009EC33 /* ViewController.swift */,
 				B221D2D021EB4A11003EB3AC /* Main.storyboard */,
 				B221D2D321EB4A13003EB3AC /* Assets.xcassets */,
 				B221D2D521EB4A13003EB3AC /* LaunchScreen.storyboard */,
@@ -451,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B225EED821EBA67D0009EC33 /* ViewController.swift in Sources */,
 				B221D2FF21EB4D05003EB3AC /* View.swift in Sources */,
 				B221D2FD21EB4BF1003EB3AC /* Controller.swift in Sources */,
 				B221D2FB21EB4A7A003EB3AC /* Model.swift in Sources */,
