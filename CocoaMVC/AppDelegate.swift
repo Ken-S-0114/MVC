@@ -13,9 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // ここで外部から ViewController に Model を渡しているとイメージ
+        guard let viewController = window?.rootViewController as? ViewController else {
+            assertionFailure()
+            return true
+        }
+        viewController.myModel = Model()
         return true
     }
 

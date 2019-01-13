@@ -10,6 +10,7 @@ import UIKit
 
 // Cocoa MVC の Controller は，View-Model 双方を参照している．
 final class ViewController: UIViewController {
+    
     var myModel: Model? {
         didSet {
             // ViewとModelとを結合し、Modelの監視を開始する
@@ -26,7 +27,9 @@ final class ViewController: UIViewController {
     deinit {
         myModel?.notificationCenter.removeObserver(self)
     }
+
     private func registerModel() {
+
         guard let model = myModel else { return }
 
         myView.label.text = model.count.description
@@ -34,14 +37,15 @@ final class ViewController: UIViewController {
         myView.minusButton.addTarget(self, action: #selector(onMinusTapped), for: .touchUpInside)
         myView.plusButton.addTarget(self, action: #selector(onPlusTapped), for: .touchUpInside)
 
-        model.notificationCenter
-            .addObserver(forName: .init(rawValue: "count"), object: nil, queue: nil, using:
-                { [unowned self] notification in
-                    if let count = notification.userInfo?["count"] as? Int {
-                        self.myView.label.text = "\(count)"
-                    }
+        model.notificationCenter.addObserver(forName: .init(rawValue: "count"),
+                                             object: nil,
+                                             queue: nil,
+                                             using: { [unowned self] notification in
+                                                if let count = notification.userInfo?["count"] as? Int {
+                                                    self.myView.label.text = "\(count)"
+                                                }
 
-            })
+        })
     }
 
     @objc func onMinusTapped() { myModel?.countDown() }
