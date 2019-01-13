@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Cocoa MVC の View は，Model を参照しない
 final class View: UIView {
     let label: UILabel
     let minusButton: UIButton

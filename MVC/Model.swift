@@ -13,6 +13,7 @@ final class Model {
     let notificationCenter = NotificationCenter()
     private(set) var count = 0 {
         didSet {
+            // Observer パターンを用いて，自分自身の状態の変化に関連する View に通知する．
             notificationCenter.post(name: .init(rawValue: "count"),
                                     object: nil,
                                     userInfo: ["count": count])

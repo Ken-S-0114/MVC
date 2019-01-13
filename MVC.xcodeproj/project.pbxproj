@@ -200,13 +200,13 @@
 			isa = PBXGroup;
 			children = (
 				B221D34021EB54BA003EB3AC /* AppDelegate.swift */,
+				B225EE9121EB55A70009EC33 /* Model.swift */,
+				B225EE9321EB56810009EC33 /* Controller.swift */,
+				B225EE9521EB56920009EC33 /* View.swift */,
 				B221D34421EB54BA003EB3AC /* Main.storyboard */,
 				B221D34721EB54BB003EB3AC /* Assets.xcassets */,
 				B221D34921EB54BB003EB3AC /* LaunchScreen.storyboard */,
 				B221D34C21EB54BB003EB3AC /* Info.plist */,
-				B225EE9121EB55A70009EC33 /* Model.swift */,
-				B225EE9321EB56810009EC33 /* Controller.swift */,
-				B225EE9521EB56920009EC33 /* View.swift */,
 			);
 			path = CocoaMVC;
 			sourceTree = "<group>";

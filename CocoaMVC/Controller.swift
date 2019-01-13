@@ -8,10 +8,12 @@
 
 import UIKit
 
+// Cocoa MVC の Controller は，View-Model 双方を参照している．
 final class ViewController: UIViewController {
     var myModel: Model? {
         didSet {
             // ViewとModelとを結合し、Modelの監視を開始する
+            registerModel()
         }
     }
 
