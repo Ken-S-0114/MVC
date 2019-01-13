@@ -10,6 +10,7 @@ import UIKit
 
 // 適切な Controller オブジェクトの選定、Model オブジェクトの保持
 final class View: UIView {
+    
     private let label = UILabel()
     private let minusButton = UIButton()
     private let plusButton = UIButton()
@@ -79,6 +80,7 @@ final class View: UIView {
     }
 
     private func regiterModel() {
+
         guard let model = myModel else { return }
         // Strategy パターンによって，適切な Controller を生成
         let controller = defaultControllerClass.init()

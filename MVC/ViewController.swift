@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 原初 MVC の場合、`ViewController` はあくまで UIKit の仕組みに則って存在するだけであって、実際の Controller としての仕事には関与しない
 class ViewController: UIViewController {
     
     private lazy var myView = View()

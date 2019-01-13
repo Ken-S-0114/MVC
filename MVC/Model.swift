@@ -9,8 +9,10 @@
 import Foundation
 
 final class Model {
+
     // NotificationCenter: 更新を複数のオブジェクトに通知する
     let notificationCenter = NotificationCenter()
+    
     private(set) var count = 0 {
         didSet {
             // Observer パターンを用いて，自分自身の状態の変化に関連する View に通知する．

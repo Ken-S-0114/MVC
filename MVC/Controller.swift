@@ -9,15 +9,12 @@
 import Foundation
 
 class Controller {
+
     weak var myModel: Model?
     // required: View が作成する Controller の型を外から指定できるようにするため
     required init() {}
 
-    @objc func onMinusTapped() {
-        myModel?.countDown()
-    }
+    @objc func onMinusTapped() { myModel?.countDown() }
 
-    @objc func onPlusTapped() {
-        myModel?.countUp()
-    }
+    @objc func onPlusTapped() { myModel?.countUp() }
 }
